@@ -21,7 +21,7 @@ def load_data():
 day_df = load_data()
 
 # --- SIDEBAR (FITUR INTERAKTIF) ---
-st.sidebar.title("🚲 Filter Data")
+st.sidebar.title("Filter Data")
 st.sidebar.markdown("Gunakan filter di bawah ini untuk berinteraksi dengan dashboard:")
 # Fitur interaktif: Filter berdasarkan Tahun
 selected_year = st.sidebar.selectbox(
@@ -36,7 +36,7 @@ else:
     filtered_df = day_df[day_df['year'] == selected_year]
 
 # --- MAIN DASHBOARD ---
-st.title("🚲 Dashboard Analisis Penyewaan Sepeda")
+st.title("Dashboard Analisis Penyewaan Sepeda")
 st.markdown("**Oleh:** Muhammad Dzaki Rifa'I (DS-01)")
 st.markdown(f"**Menampilkan data untuk:** {selected_year}")
 st.markdown("---")
